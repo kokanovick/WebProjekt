@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Task Manager - User Registration</title>
+</head>
+
+<body>
+  <header>
+    <h2>User registration</h2>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="login.html">Log in</a></li>
+        <li><a href="#" class="active">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+  <form id="registration-form">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <span id="username-error" class="error-message"></span>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <span id="password-error" class="error-message"></span>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <span id="email-error" class="error-message"></span>
+    </div>
+    <div>
+      <input type="submit" value="Register">
+      <div id="success-submit" class="success-message"></div>
+    </div>
+  </form>
+  <script src="scripts/registration.js"></script>
+</body>
+
+</html>

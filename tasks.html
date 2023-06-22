@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Task Manager - Tasks</title>
+</head>
+
+<body>
+    <header>
+        <h1>Task Manager</h1>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Insert a task</a></li>
+                <li><a href="#" class="active">Task list</a></li>
+                <li><div id="greetings"></div></li>
+                <li><button id="logout-button">Log Off</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="taskName"></div>
+            <p>Name - Description - Due Date (DD-MM-YYYY)</p>
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+
+    <script src="scripts/tasks.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Task Manager - main</title>
+</head>
+
+<body>
+  <header>
+    <h1>Task Manager</h1>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#" class="active">Insert a task</a></li>
+        <li><a href="tasks.html">Task list</a></li>
+        <li><div id="greetings"></div></li>
+        <li><button id="logout-button">Log Off</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div id="taskName"></div>
+      <form id="task-form">
+        <div>
+          <label for="task-name">Task Name:</label>
+          <input type="text" id="task-name" placeholder="Enter task name">
+          <div id="error-name" class="error-message"></div>
+        </div>
+
+        <div>
+          <label for="task-description">Task Description:</label>
+          <textarea id="task-description" placeholder="Enter task description"></textarea>
+          <div id="error-description" class="error-message"></div>
+        </div>
+
+        <div>
+          <label for="task-due-date">Due Date:</label>
+          <input type="date" id="task-due-date">
+          <div id="error-due-date" class="error-message"></div>
+        </div>
+        <button type="submit" id="submitButton">Add Task</button>
+        <div id="success-submit" class="success-message"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="scripts/submit.js"></script>
+</body>
+
+</html>
